@@ -29,14 +29,12 @@ Follow the steps below to run the Library Management API on your local machine:
 
 Start by cloning the repository to your local machine using Git:
 
-```bash
 git clone https://github.com/Nellybii/LibraryManagementSystem.git 
 cd LibraryManagementSystem
 
-### Install Dependencies
+### 2.Install Dependencies
 Install all dependencies using the following command:
 
-```bash
 npm install
 
 This will install Express.js, MongoDB, JWT, and other necessary packages required to run the API.
@@ -45,13 +43,10 @@ This will install Express.js, MongoDB, JWT, and other necessary packages require
 
 To run MongoDB locally, make sure you have it installed. After installation, run MongoDB by using the following command in your terminal:
 
-```bash
-
 ### Start the Server
 
 Once everything is set up, you can start the server by running the following command:
 
-```bash
 npm start
 // or 
 npm run dev
