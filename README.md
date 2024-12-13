@@ -39,11 +39,11 @@ npm install
 
 This will install Express.js, MongoDB, JWT, and other necessary packages required to run the API.
 
-### Set Up MongoDB
+### 3. Set Up MongoDB
 
 To run MongoDB locally, make sure you have it installed. After installation, run MongoDB by using the following command in your terminal:
 
-### Start the Server
+### 4. Start the Server
 
 Once everything is set up, you can start the server by running the following command:
 
@@ -52,7 +52,7 @@ npm start
 npm run dev
 This will start the server on http://localhost:3000.
 
-### Test the API
+###5. Test the API
 To test the API, you can use Postman or thunderClient to make requests to the following endpoints:
 
 Register a User: POST /api/auth/register
