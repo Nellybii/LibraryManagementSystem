@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../Models/UserModel');
 
 const registerUser = async (req, res, next) => {
-    const { firstName, lastName, email, password, address, gender, phoneNumber } = req.body;
+    const { firstName, lastName, email, password, address, gender, phoneNumber, role } = req.body;
 
     try {
         if (!phoneNumber) {
@@ -19,7 +19,7 @@ const registerUser = async (req, res, next) => {
 
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
-        const user = new User({ firstName, lastName, email, password: hashedPassword, address, gender, phoneNumber });
+        const user = new User({ firstName, lastName, email, password: hashedPassword, address, gender, phoneNumberc,role });
 
         await user.save();
         res.status(201).json({ message: 'User registered successfully' });
